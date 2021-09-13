@@ -32,8 +32,36 @@ struct ContentView: View {
             }
             .frame(width: view.size.width, height: 180, alignment: .top)
             .background(Color.blue)
-            .edgesIgnoringSafeArea(.all)
             
+            
+            HStack {
+                Button(action:{}) {
+                    Text("Hoteis")
+                        .font(.custom("Avenir Medium", size: 17))
+                        .foregroundColor(.white)
+                }
+                .frame(width: 100, height: 50)
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 10))
+                .background(Color.blue)
+                .offset(x: 50)
+                
+                Spacer()
+                
+                Button(action:{}) {
+                    Text("Pacotes")
+                        .font(.custom("Avenir Medium", size: 17))
+                        .foregroundColor(.white)
+            
+                }
+                .frame(width: 100, height: 50)
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.orange, lineWidth: 10))
+                .background(Color.orange)
+                .background(Color.orange)
+                .offset(x: -50)
+            }
+            .offset(y: -25)
+                
+                
             List {
                 Text("Rio de Janeiro")
                 Text("Ceará")
@@ -43,6 +71,8 @@ struct ContentView: View {
             }
         }
     }
+        .edgesIgnoringSafeArea(.all)
+
     }
 }
 
@@ -51,6 +81,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+            ContentView()
+        }
     }
 }
