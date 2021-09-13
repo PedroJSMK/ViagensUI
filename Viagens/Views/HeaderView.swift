@@ -2,7 +2,7 @@
 //  HeaderView.swift
 //  Viagens
 //
-//  Created by Pedro Kanagusto on 13/09/21.
+//  Created by PedroJSMK on 13/09/21.
 //
 
 import SwiftUI
@@ -19,11 +19,11 @@ struct HeaderView: View {
             
             
             VStack {
-                Text("Swift Viagens")
+                Text("SwiftUI Viagens")
                     .foregroundColor(Color.white)
                     .font(.custom("Avenir Black", size:
                                     self.horizontalSizeClass == .compact ? 20 : 30))
-                    .padding(.top, self.horizontalSizeClass ==  .compact ? 50 : 90)
+                    .padding(.top, self.horizontalSizeClass ==  .compact ? 70 : 90)
                 Text("Especial")
                     .foregroundColor(Color.white)
                     .font(.custom("Avenir Book", size:
@@ -48,7 +48,7 @@ struct HeaderView: View {
                                         self.horizontalSizeClass == .compact ? 17 : 24))
                         .foregroundColor(.white)
                 }
-                .frame(width: self.horizontalSizeClass ==  .compact ? 100 : 150, height: self.horizontalSizeClass ==  .compact ? 50 : 75)
+                .frame(width: self.horizontalSizeClass == .compact ? 100 : 150, height: self.horizontalSizeClass == .compact ? 50 : 75)
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.red, lineWidth: 10))
                 .background(Color.red)
                 .offset(x: self.horizontalSizeClass == .compact ? 50 : view.size.width/4)
@@ -61,13 +61,13 @@ struct HeaderView: View {
                                         self.horizontalSizeClass == .compact ? 17 : 24))      .foregroundColor(.white)
             
                 }
-                .frame(width: self.horizontalSizeClass ==  .compact ? 100 : 150, height: self.horizontalSizeClass ==  .compact ? 50 : 75)
+                .frame(width: self.horizontalSizeClass == .compact ? 100 : 150, height: self.horizontalSizeClass == .compact ? 50 : 75)
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.orange, lineWidth: 10))
                 .background(Color.orange)
                 .background(Color.orange)
                 .offset(x:  self.horizontalSizeClass == .compact ? -50 : -view.size.width/4)
             }
-            .offset(y: self.horizontalSizeClass ==  .compact ? -25 : -37.5)
+            .offset(y: self.horizontalSizeClass == .compact ? -40 : -37.5)
         }
       }
     }

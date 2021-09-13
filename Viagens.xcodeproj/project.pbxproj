@@ -17,6 +17,7 @@
 		2351F74B26EF8A490001240D /* viagens.json in Resources */ = {isa = PBXBuildFile; fileRef = 2351F74A26EF8A490001240D /* viagens.json */; };
 		2351F74E26EF8D180001240D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351F74D26EF8D180001240D /* HeaderView.swift */; };
 		2351F75226EF8EC10001240D /* ViagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351F75126EF8EC10001240D /* ViagemView.swift */; };
+		2351F75626EFA3E10001240D /* MapaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2351F75526EFA3E10001240D /* MapaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2351F74A26EF8A490001240D /* viagens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = viagens.json; path = Viagens/viagens.json; sourceTree = SOURCE_ROOT; };
 		2351F74D26EF8D180001240D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		2351F75126EF8EC10001240D /* ViagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemView.swift; sourceTree = "<group>"; };
+		2351F75526EFA3E10001240D /* MapaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				232828F026EE3C5100597A65 /* ContentView.swift */,
 				2351F74D26EF8D180001240D /* HeaderView.swift */,
 				2351F75126EF8EC10001240D /* ViagemView.swift */,
+				2351F75526EFA3E10001240D /* MapaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			files = (
 				2351F74E26EF8D180001240D /* HeaderView.swift in Sources */,
 				2351F75226EF8EC10001240D /* ViagemView.swift in Sources */,
+				2351F75626EFA3E10001240D /* MapaView.swift in Sources */,
 				2351F74726EF89640001240D /* Viagem.swift in Sources */,
 				232828F126EE3C5100597A65 /* ContentView.swift in Sources */,
 				2351F74626EF89640001240D /* Dados.swift in Sources */,

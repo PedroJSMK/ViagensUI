@@ -13,20 +13,24 @@ struct ContentView: View {
     
     var body: some View {
         
-        GeometryReader { view in
-            
-        VStack {
-            HeaderView()
-                .frame(width: view.size.width, height: self.horizontalSizeClass ==  .compact ? 200 : 310, alignment: .top)
-                               
-            List(viagens) { viagem in
-                ViagemView(viagem: viagem)
+            NavigationView {
+                GeometryReader { view in
+                    VStack {
+                        HeaderView()
+                            .frame(width: view.size.width, height: self.horizontalSizeClass ==  .compact ? 200 : 310, alignment: .top)
+                                           
+                        List(viagens) { viagem in
+                            NavigationLink(destination: MapaView(coordenada: viagem.localizacao).navigationBarTitle("Localização")){
+                                ViagemView(viagem: viagem)
+                            }
+                        }
+                        .navigationBarTitle("")
+                    }
+                }
+                .edgesIgnoringSafeArea(.all)
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
-    }
-        .edgesIgnoringSafeArea(.all)
-
-    }
 }
 
 
@@ -35,7 +39,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ContentView()
             ContentView()
         }
     }
